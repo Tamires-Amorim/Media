@@ -1,52 +1,38 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+/* Solicitando a media do aluno e calculando. Loop para fazer varias vezes. */
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+int main(void) {
+	
+	float  n1, n2, media;
+	
+	printf("Digite a sua primeira nota: ");
+	scanf("%f", &n1);
+	printf("Digite a sua segunda nota: ");
+	scanf("%f", &n2);
+	
+	media= (n1 + n2)/2 ;
+	
+	printf("A sua media eh: %.2f" , media);
+	
+	if (media >=7){
+		
+    printf("\nAprovado, media %.1f ", media);
+		
+	}
+	else if((media >=4 ) && (media<6)){
+  
+	 	printf("\n Recuperacao, media %.1f ", media);
+}
+	if (media <4){
+	
+    printf("\nReprovado, media %.1f ", media);
+    
+		
+	}
+printf("\n\n\n\n");   printf("________________________________________________\n");
+  printf("\n\n\n");
+  main();
+	return 0;
+}
